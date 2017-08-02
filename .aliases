@@ -1,0 +1,2 @@
+alias zconfig="source ~/.zshrc"
+alias venv="source ./venv/bin/activate"
