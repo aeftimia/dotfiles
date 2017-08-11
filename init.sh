@@ -22,3 +22,6 @@ brew install neovim
 
 # hub
 brew install hub
+
+# hammerspoon
+brew cask install hammerspoon
