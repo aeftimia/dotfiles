@@ -25,3 +25,6 @@ brew install hub
 
 # hammerspoon
 brew cask install hammerspoon
+
+# terraform
+brew install terraform
