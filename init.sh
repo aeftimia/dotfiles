@@ -19,6 +19,7 @@ brew cask install iterm2
 
 # neovim
 brew install neovim
+pip3 install neovim
 
 # hub
 brew install hub
