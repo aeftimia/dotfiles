@@ -92,3 +92,6 @@ mkcdir ()
     mkdir -p -- "$1" &&
       cd -P -- "$1"
 }
+
+# disale beeping
+setopt NO_BEEP
