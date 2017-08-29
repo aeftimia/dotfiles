@@ -21,6 +21,9 @@ brew cask install iterm2
 brew install neovim
 pip3 install neovim
 
+# Vim plugins
+vim +PluginInstall +qall
+
 # hub
 brew install hub
 
