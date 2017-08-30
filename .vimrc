@@ -21,7 +21,7 @@ set smarttab
 
 " Don't let Vim hide characters or make loud dings
 set conceallevel=1
-set noerrorbells
+set noeb vb t_vb=
 
 " Number gutter with relative line numbers
 " Relative lines encourage smarter movements in vim
