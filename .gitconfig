@@ -152,7 +152,6 @@
 	ra = remote add
 	rr = remote rm
 	rv = remote -v
-	rm = remote rename
 	rp = remote prune
 	rs = remote show
 	rao = remote add origin
