@@ -32,3 +32,7 @@ brew cask install hammerspoon
 
 # terraform
 brew install terraform
+
+# pytest with xdist plugin
+pip install pytest
+pip install pytest-xdist
