@@ -112,4 +112,8 @@ xmap F <Plug>Sneak_F
 omap f <Plug>Sneak_f
 omap F <Plug>Sneak_F
 
+" for markdown
+filetype plugin on
+
+" Appearance
 set background=dark

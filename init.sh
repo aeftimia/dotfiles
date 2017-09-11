@@ -36,3 +36,13 @@ brew install terraform
 # pytest with xdist plugin
 pip install pytest
 pip install pytest-xdist
+
+
+# markdown vim
+mkdir -p ~/.vim/after/ftplugin/markdown/
+curl https://raw.githubusercontent.com/suan/vim-instant-markdown/master/after/ftplugin/markdown/instant-markdown.vi
+
+# markdown vim
+npm -g install instant-markdown-d
+mkdir -p ~/.vim/after/ftplugin/markdown/
+curl https://raw.githubusercontent.com/suan/vim-instant-markdown/master/after/ftplugin/markdown/instant-markdown.vim -o ~/.vim/after/ftplugin/markdown/instant-markdown.vim
