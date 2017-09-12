@@ -1,2 +1,2 @@
-alias venv="source ./venv/bin/activate"
+alias venv="if [ ! -f ./venv ]; then virtualenv venv; fi; source ./venv/bin/activate"
 alias git=hub
