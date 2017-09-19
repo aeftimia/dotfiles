@@ -81,13 +81,5 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $HOME/.aliases
 
-# custom functions
-# mkdir and cd into it
-mkcdir ()
-{
-    mkdir -p -- "$1" &&
-      cd -P -- "$1"
-}
-
 # disale beeping
 setopt NO_BEEP
