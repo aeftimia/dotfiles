@@ -60,6 +60,9 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " terraform
 Plug 'hashivim/vim-terraform'
+
+" solidity
+Plug 'tomlion/vim-solidity'
 call plug#end()
 
 
