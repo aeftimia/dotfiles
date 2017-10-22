@@ -17,9 +17,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # iterm2
 brew cask install iterm2
 
-# neovim
-brew install neovim
-pip3 install neovim
+# viw
+brew install vim
 
 # Vim plugins
 vim +PluginInstall +qall

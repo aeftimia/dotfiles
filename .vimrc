@@ -113,3 +113,8 @@ xmap f <Plug>Sneak_f
 xmap F <Plug>Sneak_F
 omap f <Plug>Sneak_f
 omap F <Plug>Sneak_F
+
+" yank to clipboard
+if has("clipboard")
+   set clipboard=unnamed " copy to the system clipboard
+endif
