@@ -41,3 +41,6 @@ brew install the_silver_searcher
 
 # entr
 brew install entr
+
+# truffle
+npm install -g truffle
