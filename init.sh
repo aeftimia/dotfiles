@@ -35,3 +35,9 @@ brew install terraform
 # pytest with xdist plugin
 pip install pytest
 pip install pytest-xdist
+
+# silver searcher
+brew install the_silver_searcher
+
+# entr
+brew install entr
