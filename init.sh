@@ -44,3 +44,9 @@ brew install entr
 
 # truffle
 npm install -g truffle
+ 
+# pandoc
+brew install pandoc
+
+# latex
+brew cask install basictex
