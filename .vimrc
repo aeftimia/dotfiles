@@ -63,6 +63,9 @@ Plug 'hashivim/vim-terraform'
 
 " solidity
 Plug 'tomlion/vim-solidity'
+
+" golang
+Plug 'fatih/vim-go'
 call plug#end()
 
 
