@@ -50,3 +50,6 @@ brew install pandoc
 
 # latex
 brew cask install basictex
+
+# docker
+brew cask install docker
