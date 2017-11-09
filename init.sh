@@ -51,8 +51,9 @@ brew install pandoc
 # latex
 brew cask install basictex
 
-# docker
-brew cask install docker
-
 # virtualbox
 brew cask install virtualbox
+
+# docker
+brew cask install docker
+docker-machine create default
