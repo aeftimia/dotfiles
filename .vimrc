@@ -66,6 +66,9 @@ Plug 'tomlion/vim-solidity'
 
 " golang
 Plug 'fatih/vim-go'
+
+" gtm
+Plug 'git-time-metric/gtm-vim-plugin'
 call plug#end()
 
 

@@ -17,11 +17,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # iterm2
 brew cask install iterm2
 
-# viw
+# vim
 brew install vim
-
-# Vim plugins
-vim +PluginInstall +qall
 
 # hub
 brew install hub
@@ -57,3 +54,10 @@ brew cask install virtualbox
 # docker
 brew cask install docker
 docker-machine create default
+
+# gtm
+brew tap git-time-metric/gtm
+brew install gtm
+
+# Vim plugins
+vim +PluginInstall +qall
