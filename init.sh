@@ -55,9 +55,5 @@ brew cask install virtualbox
 brew cask install docker
 docker-machine create default
 
-# gtm
-brew tap git-time-metric/gtm
-brew install gtm
-
 # Vim plugins
 vim +PluginInstall +qall
