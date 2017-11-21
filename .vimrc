@@ -68,7 +68,7 @@ Plug 'tomlion/vim-solidity'
 Plug 'fatih/vim-go'
 
 " EditorConfig
-Plugin 'editorconfig/editorconfig-vim'
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 

@@ -39,8 +39,11 @@ brew install the_silver_searcher
 # entr
 brew install entr
 
+# yarn
+brew install yarn
+
 # truffle
-npm install -g truffle
+yarn add -g truffle
  
 # pandoc
 brew install pandoc
@@ -57,3 +60,7 @@ docker-machine create default
 
 # Vim plugins
 vim +PluginInstall +qall
+
+# React Native
+brew install watchman
+yarn add -g react-native-cli
