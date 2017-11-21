@@ -43,7 +43,7 @@ brew install entr
 brew install yarn
 
 # truffle
-yarn add -g truffle
+npm install -g truffle
  
 # pandoc
 brew install pandoc
@@ -63,4 +63,4 @@ vim +PluginInstall +qall
 
 # React Native
 brew install watchman
-yarn add -g react-native-cli
+npm install -g react-native-cli
