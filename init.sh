@@ -64,3 +64,9 @@ vim +PluginInstall +qall
 # React Native
 brew install watchman
 npm install -g react-native-cli
+
+# hexo
+npm install -g hexo-cli
+
+# create-react-native-app
+yarn global add create-react-native-app
