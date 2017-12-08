@@ -65,8 +65,8 @@ vim +PluginInstall +qall
 brew install watchman
 npm install -g react-native-cli
 
-# hexo
-npm install -g hexo-cli
+# gatsby
+npm install -g gatsby-cli
 
 # create-react-native-app
 yarn global add create-react-native-app
