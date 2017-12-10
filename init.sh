@@ -92,6 +92,9 @@ vim +PluginInstall +qall
 brew install watchman
 npm install -g react-native-cli
 
+# flow
+brew install flow
+
 # gatsby
 npm install -g gatsby-cli
 
