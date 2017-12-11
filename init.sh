@@ -100,3 +100,6 @@ npm install -g gatsby-cli
 
 # create-react-native-app
 yarn global add create-react-native-app
+
+# direnv
+brew install direnv
