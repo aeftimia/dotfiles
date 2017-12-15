@@ -39,21 +39,10 @@ set sidescrolloff=5
 set mouse=a
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
-call plug#begin('~/.local/share/nvim/plugged')
-
-" Required
-Plug 'Shougo/unite.vim'
-
-" Navigating Project Files
-Plug 'ctrlpvim/ctrlp.vim', { 'on': 'CtrlP' }
-Plug 'mhinz/vim-grepper'
-Plug 'Shougo/vimfiler.vim', { 'on': 'VimFiler' }
+call plug#begin('~/.local/share/vim/plugged')
 
 " Code Editing
 Plug 'w0rp/ale'
-
-" Movement
-Plug 'justinmk/vim-sneak'
 
 " Tmux
 Plug 'christoomey/vim-tmux-navigator'
