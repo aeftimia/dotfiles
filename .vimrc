@@ -44,9 +44,6 @@ call plug#begin('~/.local/share/vim/plugged')
 " Code Editing
 Plug 'w0rp/ale'
 
-" Tmux
-Plug 'christoomey/vim-tmux-navigator'
-
 " terraform
 Plug 'hashivim/vim-terraform'
 

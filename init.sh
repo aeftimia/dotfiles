@@ -104,5 +104,5 @@ yarn global add create-react-native-app
 # direnv
 brew install direnv
 
-# t
-gem install t
+# rainbowstream
+pip3 install rainbowstream
