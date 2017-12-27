@@ -98,6 +98,9 @@ brew install flow
 # gatsby
 npm install -g gatsby-cli
 
+# create-react-app
+yarn global add create-react-app
+
 # create-react-native-app
 yarn global add create-react-native-app
 

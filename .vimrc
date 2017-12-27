@@ -53,6 +53,9 @@ Plug 'tomlion/vim-solidity'
 " golang
 Plug 'fatih/vim-go'
 
+" jsx
+Plug 'mxw/vim-jsx'
+
 " EditorConfig
 Plug 'editorconfig/editorconfig-vim'
 
