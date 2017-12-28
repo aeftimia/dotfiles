@@ -40,6 +40,8 @@ set mouse=a
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 call plug#begin('~/.local/share/vim/plugged')
+" NerdTree
+Plug 'scrooloose/nerdtree'
 
 " Code Editing
 Plug 'w0rp/ale'
