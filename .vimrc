@@ -5,9 +5,7 @@ set encoding=utf8
 set nowrap
 " Except... on Makrdown. That's good stuff.
 autocmd FileType markdown setlocal wrap
-
-" Adjust system undo levels
-set undolevels=100
+" Adjust system undo levels set undolevels=100
 
 " Use system clipboard
 set clipboard=unnamed
@@ -38,6 +36,9 @@ set sidescrolloff=5
 " Enable mouse support
 set mouse=a
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
+" Filetype indent
+filetype indent on
 
 call plug#begin('~/.local/share/vim/plugged')
 " NerdTree
