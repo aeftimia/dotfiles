@@ -85,6 +85,10 @@ brew cask install virtualbox
 brew cask install docker
 docker-machine create default
 
+# vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 # Vim plugins
 vim +PluginInstall +qall
 
