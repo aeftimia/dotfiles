@@ -44,9 +44,6 @@ call plug#begin('~/.local/share/vim/plugged')
 " NerdTree
 Plug 'scrooloose/nerdtree'
 
-" Code Editing
-Plug 'w0rp/ale'
-
 " terraform
 Plug 'hashivim/vim-terraform'
 
