@@ -1,6 +1,7 @@
 local hotkey = require "hs.hotkey"
 local grid = require "hs.grid"
 local window = require "hs.window"
+local application = require "hs.application"
 
 window.animationDuration = 0
 
@@ -15,7 +16,6 @@ local mash2 = {"alt", "ctrl"}
 local mash2shift = {"alt", "ctrl", "shift"}
 local mash = {"cmd", "alt", "ctrl"}
 local mashshift = {"cmd", "alt", "ctrl", "shift"}
-
 
 -- Move function() window.
 hotkey.bind(mash1, 'j', grid.pushWindowDown)
@@ -38,7 +38,17 @@ hs.hotkey.bind(mash2, 'J', function() hs.window.focusedWindow():focusWindowSouth
 
 hotkey.bind(mash1, 'b', function() window.focusedWindow():sendToBack() end)
 
+local function emacsMgr()
+    local emacs = hs.application.get('Emacs')
+    local frontmost = hs.application.frontmostApplication()
+    if emacs == nil or not emacs:isRunning() or emacs:isHidden() or not emacs:isFrontmost() then
+        emacs = hs.application.launchOrFocus('/Applications/Emacs.app')
+    else 
+        emacs:hide()
+    end
+end
 
+hotkey.bind({'ctrl', 'cmd'}, 'space', emacsMgr)
 
 local function pressFn(mods, key)
     if key == nil then
@@ -50,7 +60,7 @@ local function pressFn(mods, key)
 end
 
 local function remap(mods, key, pressFn)
-        hotkey.bind(mods, key, pressFn, nil, pressFn)    
+    hotkey.bind(mods, key, pressFn, nil, pressFn)
 end
 
 remap({'ctrl'}, 'h', pressFn('left'))

@@ -69,9 +69,6 @@ brew install entr
 # yarn
 brew install yarn
 
-# truffle
-npm install -g truffle
- 
 # pandoc
 brew install pandoc
 
@@ -88,24 +85,5 @@ docker-machine create default
 # Vim plugins
 vim +PluginInstall +qall
 
-# React Native
-brew install watchman
-npm install -g react-native-cli
-
-# flow
-brew install flow
-
-# gatsby
-npm install -g gatsby-cli
-
-# create-react-app
-yarn global add create-react-app
-
-# create-react-native-app
-yarn global add create-react-native-app
-
 # direnv
 brew install direnv
-
-# rainbowstream
-pip3 install rainbowstream
