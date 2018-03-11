@@ -47,6 +47,9 @@ brew cask install iterm2
 # vim
 brew install vim
 
+# emacs
+brew cask install emacs
+
 # hub
 brew install hub
 
