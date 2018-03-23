@@ -19,7 +19,6 @@ set smarttab
 
 " Don't let Vim hide characters or make loud dings
 set conceallevel=1
-set belloff=all
 
 " Number gutter with relative line numbers
 " Relative lines encourage smarter movements in vim
@@ -34,31 +33,10 @@ set scrolloff=1
 set sidescrolloff=5
 
 " Enable mouse support
-set mouse=a
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 " Filetype indent
 filetype indent on
-
-call plug#begin('~/.local/share/vim/plugged')
-" NerdTree
-Plug 'scrooloose/nerdtree'
-
-" terraform
-Plug 'hashivim/vim-terraform'
-
-" golang
-Plug 'fatih/vim-go'
-
-" jsx
-Plug 'mxw/vim-jsx'
-
-" EditorConfig
-Plug 'editorconfig/editorconfig-vim'
-
-" surround
-Plug 'tpope/vim-surround'
-call plug#end()
 
 " Configuration 
 " indentLine
