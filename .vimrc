@@ -33,7 +33,7 @@ set scrolloff=1
 set sidescrolloff=5
 
 " Enable mouse support
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+set mouse=a
 
 " Filetype indent
 filetype indent on
