@@ -53,6 +53,7 @@ endif
 
 " Auto resize panes
 autocmd WinEnter * wincmd =
+autocmd VimResized * wincmd =
 
 " NERDTree
 noremap <C-n> :NERDTreeToggle<CR>
