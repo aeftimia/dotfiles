@@ -92,5 +92,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 # Vim plugins
 vim +PluginInstall +qall
 
+# tmux
+brew install tmux
+
 # direnv
 brew install direnv
