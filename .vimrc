@@ -1,6 +1,9 @@
 set nomodeline
 set encoding=utf8
 
+" WTF is up with vim defaults?!
+set timeoutlen=1000 ttimeoutlen=0
+
 " Stop word wrapping
 set nowrap
 " Except... on Makrdown. That's good stuff.
