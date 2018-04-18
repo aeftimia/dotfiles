@@ -4,6 +4,9 @@ set encoding=utf8
 " WTF is up with vim defaults?!
 set timeoutlen=1000 ttimeoutlen=0
 
+" Don't overwrite buffer when pasting
+xnoremap <expr> p 'pgv"'.v:register.'y`>'
+
 " Stop word wrapping
 set nowrap
 " Except... on Makrdown. That's good stuff.
@@ -65,7 +68,6 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-:wq
 
 "
 " Wrap window-move-cursor
