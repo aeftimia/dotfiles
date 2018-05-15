@@ -73,15 +73,16 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 " Wrap window-move-cursor
 "
 function! s:GotoNextWindow( direction, count )
-  let l:prevWinNr = winnr()
-  execute a:count . 'wincmd' a:direction
-  return winnr() != l:prevWinNr
+    let l:prevWinNr = winnr()
+    execute a:count . 'wincmd' a:direction
+    return winnr() != l:prevWinNr
 endfunction
 
 function! s:JumpWithWrap( direction, opposite )
-  if ! s:GotoNextWindow(a:direction, v:count1)
-    call s:GotoNextWindow(a:opposite, 999)
-  endif
+    if ! s:GotoNextWindow(a:direction, v:count1)
+        while ! s:GotoNextWindow(a:opposite, v:count1)
+        endwhile
+    endif
 endfunction
 
 nnoremap <silent> <C-w>h :<C-u>call <SID>JumpWithWrap('h', 'l')<CR>
