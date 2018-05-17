@@ -80,7 +80,7 @@ endfunction
 
 function! s:JumpWithWrap( direction, opposite )
     if ! s:GotoNextWindow(a:direction, v:count1)
-        while ! s:GotoNextWindow(a:opposite, v:count1)
+        while s:GotoNextWindow(a:opposite, v:count1)
         endwhile
     endif
 endfunction
