@@ -16,8 +16,9 @@
     (remove-hook 'window-configuration-change-hook 'recursionless-balance)
     (balance-windows nil)
     (add-hook 'window-configuration-change-hook 'recursionless-balance)))
-
 (add-hook 'window-configuration-change-hook 'recursionless-balance)
+
+(setq windmove-wrap-around t)
 ;;; uncomment for CJK utf-8 support for non-Asian users
 ;; (require 'un-define)
 (shell)
