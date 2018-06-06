@@ -1,8 +1,4 @@
 ;; .emacs
-(add-to-list 'load-path "~/.emacs.d/evil")
-(require 'evil)
-(evil-mode 1)
-
 (custom-set-variables
  ;; uncomment to always end a file with a newline
  ;'(require-final-newline t)
@@ -11,7 +7,7 @@
  ;; default to unified diffs
  '(diff-switches "-u"))
 
-(defun recursionless-balance (&optional)
+(defun recursionless-balance (&optional args)
   (progn
     (remove-hook 'window-configuration-change-hook 'recursionless-balance)
     (balance-windows nil)
