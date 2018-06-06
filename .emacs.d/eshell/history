@@ -1,0 +1,10 @@
+ls
+dired
+dird
+dired Documents
+pwd
+cd ~/.emacs.d/
+wget https://cs.stanford.edu/~knuth/programs/color-mode.el
+git
+which git
+rm -rf ~/.emacs.d/elpa/
