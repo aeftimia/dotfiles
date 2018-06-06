@@ -19,6 +19,7 @@
 (add-hook 'window-configuration-change-hook 'recursionless-balance)
 
 (setq windmove-wrap-around t)
+(setq inhibit-startup-screen t)
 ;;; uncomment for CJK utf-8 support for non-Asian users
 ;; (require 'un-define)
 (shell)
