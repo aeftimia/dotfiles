@@ -38,8 +38,8 @@
 
 
 (setq mac-command-modifier 'super)
-(global-set-key (kbd "s-d") (lambda () (interactive) (split-window-right) (windmove-right) (eshell)))
-(global-set-key (kbd "s-D") (lambda () (interactive) (split-window-below) (windmove-down) (eshell)))
+(global-set-key (kbd "s-d") (lambda () (interactive) (split-window-right) (windmove-right) (eshell 'N)))
+(global-set-key (kbd "s-D") (lambda () (interactive) (split-window-below) (windmove-down) (eshell 'N)))
 (global-set-key (kbd "M-d") 'delete-window)
 
 (global-set-key (kbd "s-h")  'windmove-left)
@@ -50,7 +50,7 @@
 (blink-cursor-mode 0)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-(eshell)
+(eshell 'N)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
