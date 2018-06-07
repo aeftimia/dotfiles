@@ -8,3 +8,15 @@ wget https://cs.stanford.edu/~knuth/programs/color-mode.el
 git
 which git
 rm -rf ~/.emacs.d/elpa/
+ssh grimlock
+ssh server -f emacsclient -c --display=$DISPLAY
+ssh grimlock -f emacsclient -c --display=$DISPLAY
+ls
+ls repos
+ssh grimlock
+ssh server -f emacsclient -c --display=$DISPLA
+ls
+pwd
+ls
+jkj
+ssh grimlock
