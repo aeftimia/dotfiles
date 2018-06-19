@@ -5,6 +5,7 @@
 (package-initialize)
 
 (require 'evil)
+(require 'evil-magit)
 (evil-mode 1)
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
@@ -18,7 +19,9 @@
  ;; If there is more than one, they won't work right.
  '(diff-switches "-u")
  '(display-line-numbers (quote relative))
- '(package-selected-packages (quote (solarized-theme evil))))
+ '(package-selected-packages
+   (quote
+    (use-package magit "magit" evil-magit solarized-theme evil))))
 
 ;; Thanks Stevey!
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
@@ -36,24 +39,24 @@
 ;;; uncomment for CJK utf-8 support for non-Asian users
 ;; (require 'un-define)
 
-
 (setq mac-command-modifier 'super)
-(global-set-key (kbd "s-d") (lambda () (interactive) (split-window-right) (windmove-right) (eshell 'N)))
-(global-set-key (kbd "s-D") (lambda () (interactive) (split-window-below) (windmove-down) (eshell 'N)))
+(global-set-key (kbd "s-d") (lambda () (interactive) (split-window-right) (windmove-right) (rename-uniquely) (shell)))
+(global-set-key (kbd "s-D") (lambda () (interactive) (split-window-below) (windmove-down) (rename-uniquely) (shell)))
 (global-set-key (kbd "M-d") 'delete-window)
 
 (global-set-key (kbd "s-h")  'windmove-left)
 (global-set-key (kbd "s-l") 'windmove-right)
 (global-set-key (kbd "s-k")    'windmove-up)
 (global-set-key (kbd "s-j")  'windmove-down)
-
 (blink-cursor-mode 0)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
+(setq wdired-allow-to-change-permissions t)
 
-(eshell 'N)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(ggshell)

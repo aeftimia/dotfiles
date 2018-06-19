@@ -20,3 +20,13 @@ pwd
 ls
 jkj
 ssh grimlock
+tmux
+shell
+ssh grimlock
+ssh remote_host -f emacsclient --eval '"(make-frame-on-display \"$DISPLAY\")"'
+ssh grimlock -f emacsclient --eval '"(make-frame-on-display \"$DISPLAY\")"'
+pwd
+ls
+ssh grimlock -f emacsclient --eval '"(make-frame-on-display \"$DISPLAY\")"'
+ssh grimlock -f emacsclient --eval '"(make-frame-on-display \"$DISPLAY\")"'
+ssh -Y grimlock -f emacsclient --eval '"(make-frame-on-display \"$DISPLAY\")"'
