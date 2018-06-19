@@ -11,7 +11,11 @@ xnoremap <expr> p 'pgv"'.v:register.'y`>'
 set nowrap
 " Except... on Makrdown. That's good stuff.
 autocmd FileType markdown setlocal wrap
-" Adjust system undo levels set undolevels=100
+" Adjust system undo levels
+set undolevels=100
+
+" source the ~.bashrc
+set shell=bash\ --login
 
 " Use system clipboard
 set clipboard=unnamed
@@ -33,6 +37,8 @@ set relativenumber
 
 " Use search highlighting
 set hlsearch
+
+syntax on
 
 " Space above/beside cursor from screen edges
 set scrolloff=1
