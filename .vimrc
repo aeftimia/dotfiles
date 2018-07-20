@@ -34,6 +34,7 @@ set conceallevel=1
 " Relative lines encourage smarter movements in vim
 set number
 set relativenumber
+let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
 
 " Use search highlighting
 set hlsearch
