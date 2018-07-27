@@ -71,5 +71,8 @@ vim +PluginInstall +qall
 # tmux
 brew install tmux
 
-# direnv
-brew install direnv
+# xquartz
+brew cask install xquartz
+
+# xclip
+brew install xclip
