@@ -91,7 +91,7 @@ nnoremap <silent> <C-w><Up> :<C-u>call <SID>JumpWithWrap('k', 'j')<CR>
 nnoremap <silent> <C-w><Right> :<C-u>call <SID>JumpWithWrap('l', 'h')<CR>
 
 " Just enough terminal emulation
-nnoremap <CR> Ypo<CR><ESC>mz2kV :'<,'>!bash<CR>`z
+vnoremap <CR> ypo<CR><ESC>mz2kV :'<,'>!bash<CR>`z
 
 " Interactive shell to load aliases and such
 set shell=/bin/bash\ -i
