@@ -6,14 +6,14 @@ aws-describe() {
 }
 
 aws-stop() {
-    cmd="aws ec2 describe-instances --query 'Reservations[*].Instances[*][InstanceId][${1}]' --output text"
+    cmd="aws ec2 describe-instances --query 'Reservations[*].Instances[*][InstanceId]' --output text | sed -n ${1}p"
     echo $cmd
     id=$(bash -c "$cmd")
     aws ec2 stop-instances --instance-ids "${id}"
 }
 
 aws-start() {
-    cmd="aws ec2 describe-instances --query 'Reservations[*].Instances[*][InstanceId][${1}]' --output text"
+    cmd="aws ec2 describe-instances --query 'Reservations[*].Instances[*][InstanceId]' --output text | sed -n ${1}p"
     echo $cmd
     id=$(bash -c "$cmd")
     aws ec2 start-instances --instance-ids "${id}"
