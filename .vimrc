@@ -90,4 +90,4 @@ nnoremap <silent> <C-w><Right> :<C-u>call <SID>JumpWithWrap('l', 'h')<CR>
 vnoremap <CR> ypo<CR><ESC>mz2kV :'<,'>!bash<CR>`z
 
 " Interactive shell to load aliases and such
-set shell=/bin/bash\ -i
+set shell=/bin/bash\ --login
