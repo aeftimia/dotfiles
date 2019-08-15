@@ -72,5 +72,5 @@ brew install tmux
 brew cask install xquartz
 
 # git completion
-curl https://github.com/git/git/blob/master/contrib/completion/git-completion.bash  > git-completion.bash
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > git-completion.bash
 source ~/git-completion.bash
