@@ -91,3 +91,6 @@ vnoremap <CR> ypo<CR><ESC>mz2kV :'<,'>!bash<CR>`z
 
 " Interactive shell to load aliases and such
 set shell=/bin/bash\ --login
+
+" per project config files
+set exrc
