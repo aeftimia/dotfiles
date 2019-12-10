@@ -1,4 +1,18 @@
-alias git=hub
 alias tma='tmux -CC attach -t'
 alias tmk='tmux kill-session -t'
 alias tmn='tmux -CC new-session -s'
+
+mkworktree () {
+    git worktree add $1 $1 ${@:2}
+    cd $1
+}
+
+rmworktree () {
+    dirname=`PWD`
+    result="${dirname%"${dirname##*[!/]}"}" # extglob-free multi-trailing-/ trim
+    result="${result##*/}"
+    cd ..
+    rm -rf dirname
+    git worktree prune $dirname
+    git branch -D $dirname
+}
