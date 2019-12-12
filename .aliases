@@ -8,11 +8,9 @@ mkworktree () {
 }
 
 rmworktree () {
-    dirname=`PWD`
-    result="${dirname%"${dirname##*[!/]}"}" # extglob-free multi-trailing-/ trim
-    result="${result##*/}"
+    dirname=${PWD##*/} 
     cd ..
-    rm -rf dirname
-    git worktree prune $dirname
+    rm -rf $dirname
+    git worktree remove $dirname
     git branch -D $dirname
 }
