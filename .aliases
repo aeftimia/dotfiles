@@ -12,7 +12,7 @@ rmworktree () {
     dirname=${PWD##*/} 
     cd ..
     rm -rf $dirname
-    git worktree remove $dirname
+    git worktree prune
     git checkout master
     git branch -D $dirname
 }
