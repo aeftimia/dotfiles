@@ -30,7 +30,7 @@ set conceallevel=1
 " Number gutter with relative line numbers
 set number
 set relativenumber
-let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
+let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl relativenumber'
 
 " Use search highlighting
 set hlsearch
