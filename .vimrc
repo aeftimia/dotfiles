@@ -14,9 +14,6 @@ autocmd FileType markdown setlocal wrap
 " Adjust system undo levels
 set undolevels=100
 
-" Use system clipboard
-set clipboard=unnamed
-
 " Set tab width and convert tabs to spaces
 set tabstop=4
 set softtabstop=4
@@ -51,11 +48,6 @@ filetype indent on
 " indentLine
 let g:indentLine_enabled = 1
 let g:indentLine_char = "⟩"
-
-" yank to clipboard
-if has("clipboard")
-   set clipboard=unnamed " copy to the system clipboard
-endif
 
 " Auto resize panes
 autocmd WinEnter * wincmd =
