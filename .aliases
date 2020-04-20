@@ -1,1 +1,18 @@
-alias git=hub
+alias tma='tmux -CC attach -t'
+alias tmk='tmux kill-session -t'
+alias tmn='tmux -CC new-session -s'
+
+mkworktree () {
+    mkdir $1
+    git worktree add -b $1 $1 ${@:2}
+    cd $1
+}
+
+rmworktree () {
+    dirname=${PWD##*/} 
+    cd ..
+    rm -rf $dirname
+    git worktree prune
+    git checkout master
+    git branch -D $dirname
+}
