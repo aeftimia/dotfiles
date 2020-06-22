@@ -74,3 +74,6 @@ brew cask install xquartz
 # git completion
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > git-completion.bash
 source ~/git-completion.bash
+
+# black
+pip install black
