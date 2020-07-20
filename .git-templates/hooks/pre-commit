@@ -46,4 +46,4 @@ EOF
 fi
 
 # Black formatter
-exec black *py
+exec black
