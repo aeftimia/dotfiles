@@ -174,3 +174,5 @@
 	ss = stash save
 	sw = stash show
 	#############
+[init]
+	templatedir = ~/.git-templates
