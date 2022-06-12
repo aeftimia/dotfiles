@@ -7,9 +7,6 @@ cp /usr/local/etc/fonts/fonts.conf.bak /usr/local/etc/fonts/fonts.conf
 git clone https://github.com/powerline/fonts.git
 ./fonts/install.sh
 
-brew tap homebrew/cask-fonts
-brew cask install font-source-code-pro
-
 # iterm2
 brew cask install iterm2
 
@@ -17,6 +14,9 @@ brew cask install iterm2
 brew install vim
 
 # emacs
+brew install svn
+brew tap homebrew/cask-fonts
+brew cask install font-source-code-pro
 brew install --cask emacs
 
 # hammerspoon
