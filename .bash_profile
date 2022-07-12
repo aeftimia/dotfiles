@@ -1,6 +1,7 @@
 set -o vi
 # shopt -s expand_aliases
 source ~/aws-helper.sh
+alias vim /usr/local/bin/vim
 
 export PATH="$HOME/.cargo/bin:$PATH"
 

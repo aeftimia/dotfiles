@@ -7,11 +7,15 @@ cp /usr/local/etc/fonts/fonts.conf.bak /usr/local/etc/fonts/fonts.conf
 git clone https://github.com/powerline/fonts.git
 ./fonts/install.sh
 
+# miniconda
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/miniconda.sh
+bash ~/miniconda.sh -b -p $HOME/miniconda
+
 # iterm2
 brew cask install iterm2
 
 # vim
-brew install vim
+brew install vim -vd protobuf
 
 # emacs
 brew install svn
