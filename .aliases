@@ -16,3 +16,7 @@ rmworktree () {
     git checkout master
     git branch -D $dirname
 }
+
+s () {
+    eval "grep -irl \"$1\" | xargs -I@ sed -i '' 's/$1/$2/g' @"
+}
