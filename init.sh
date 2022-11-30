@@ -8,8 +8,7 @@ git clone https://github.com/powerline/fonts.git
 ./fonts/install.sh
 
 # miniconda
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/miniconda.sh
-bash ~/miniconda.sh -b -p $HOME/miniconda
+brew install --cask miniconda
 
 # iterm2
 brew install --cask iterm2
