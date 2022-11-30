@@ -12,7 +12,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~
 bash ~/miniconda.sh -b -p $HOME/miniconda
 
 # iterm2
-brew cask install iterm2
+brew install --cask iterm2
 
 # vim
 brew install vim -vd protobuf
@@ -20,11 +20,11 @@ brew install vim -vd protobuf
 # emacs
 brew install svn
 brew tap homebrew/cask-fonts
-brew cask install font-source-code-pro
+brew install --cask font-source-code-pro
 brew install --cask emacs
 
 # hammerspoon
-brew cask install hammerspoon
+brew install --cask hammerspoon
 
 # pytest with xdist plugin
 pip install pytest
@@ -34,10 +34,10 @@ pip install pytest-xdist
 brew install pandoc
 
 # latex
-brew cask install basictex
+brew install --cask basictex
 
 # docker
-brew cask install docker
+brew install --cask docker
 docker-machine create default
 
 # vim-plug
@@ -48,7 +48,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 brew install tmux
 
 # xquartz
-brew cask install xquartz
+brew install --cask xquartz
 
 # git completion
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > git-completion.bash
