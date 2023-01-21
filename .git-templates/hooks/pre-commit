@@ -46,4 +46,4 @@ EOF
 fi
 
 # Black formatter
-# exec black $(git rev-parse --show-toplevel)
+exec black $(git rev-parse --show-toplevel)
