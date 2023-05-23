@@ -86,3 +86,5 @@ set shell=/bin/bash\ --login
 
 " per project config files
 set exrc
+
+packloadall

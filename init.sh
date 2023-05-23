@@ -1,3 +1,6 @@
+# openai
+pip3 install openai
+
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
@@ -55,3 +58,10 @@ source ~/git-completion.bash
 
 # black
 pip install black
+
+# plugins
+mkdir -p ~/.vim/pack/plugins/start/
+
+# chatgpt
+cd ~/.vim/pack/plugins/start/ && \
+git clone https://github.com/CoderCookE/vim-chatgpt.git
