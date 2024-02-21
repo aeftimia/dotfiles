@@ -18,5 +18,9 @@ rmworktree () {
 }
 
 s () {
-    eval "grep -irl \"$1\" | xargs -I@ sed -i '' 's/$1/$2/g' @"
+  if [ $# -ne 2 ]; then
+    echo "Usage: git_find_replace <search_string> <replace_string>"
+    return 1
+  fi
+  eval "git ls-files | xargs -I@ sed -i '' 's/$1/$2/g' @"
 }
